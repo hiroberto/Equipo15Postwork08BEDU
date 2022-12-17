@@ -154,16 +154,19 @@ Para esta hipótesis obtuvimos un p-value < 2.2e-16 menor al 0.05 por lo cual la
 
 
 ### 6. Análisis
-De acuerdo a la información analizada en los puntos anteriores, llegamos a lo siguiente:
+De acuerdo a la información analizada en los puntos anteriores, y retomando esto:
+> La mayoría de las personas afirman que los hogares con menor nivel socioeconómico tienden a gastar más en productos no saludables que las personas con mayores niveles socioeconómicos y que esto, entre otros determinantes, lleva a que un hogar presente cierta inseguridad alimentaria.
 
-* Aunque comprendemos de manera general conceptos y realizamos ejercicios en las sesiones, llevar a cabo este postwork ocupaba un entendimiento mayor.
-  * Tanto de las herramientas como de los conceptos, así como unificar ambas cosas
-  * Hemos intentado trabajar con lo que conocíamos y llegamos a los resultados mostrados en el script y la presentación
-* Atacamos la situación así:
-  * Quien tenía un mejor entendimiento tomaba el rol de hacer el punto del postwork08 o de los otros postworks
-  * Explicaba la situación y de cierto modo aprendíamos, viendo la situación desde otra perspectiva
-  * De manera individual, revisamos los videos de las sesiones para una mejor comprensión
-  * Nos apoyamos del material actual así como de información de otros sitios
-*
-* as
-* das
+* Llegamos a lo siguiente en este postwork:
+  * Vimos con algunos estadísticos sobre el gasto en alimentos saludables VS no saludables, que la muestra gasta más en los primeros.
+  * Además con la regresión logística, vimos que esta afirmación no aplica a la muestra, ya que los factores que más determinan la inseguridad son el número de personas en el hogar y la edad del jefe de familia
+
+* Sobre el trabajo en equipo y la aplicación de los conocimientos adquiridos vimos:
+  * Aunque comprendemos de manera general conceptos y realizamos ejercicios en las sesiones, llevar a cabo este postwork ocupaba un entendimiento mayor.
+    * Tanto de las herramientas como de los conceptos, así como unificar ambas cosas
+    * Hemos intentado trabajar con lo que conocíamos y llegamos a los resultados mostrados en el script y la presentación
+  * Atacamos la situación así:
+    * Quien tenía un mejor entendimiento tomaba el rol de hacer el punto del postwork08 o de los otros postworks
+    * Explicaba la situación y de cierto modo aprendíamos, viendo la situación desde otra perspectiva
+    * De manera individual, revisamos los videos de las sesiones para una mejor comprensión
+    * Nos apoyamos del material actual así como de información de otros sitios
