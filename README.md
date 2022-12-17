@@ -45,9 +45,15 @@ Y para terminar graficaremos también la distribución binomial para los NO Salu
 
 ### 6. Análisis
 De acuerdo a la información analizada en los puntos anteriores, llegamos a lo siguiente:
-* Asdasdas ad
-  * asdasdas
-* dad
-* asd
+
+* Aunque comprendemos de manera general conceptos y realizamos ejercicios en las sesiones, llevar a cabo este postwork ocupaba un entendimiento mayor.
+  * Tanto de las herramientas como de los conceptos, así como unificar ambas cosas
+  * Hemos intentado trabajar con lo que conocíamos y llegamos a los resultados mostrados en el script y la presentación
+* Atacamos la situación así:
+  * Quien tenía un mejor entendimiento tomaba el rol de hacer el punto del postwork08 o de los otros postworks
+  * Explicaba la situación y de cierto modo aprendíamos, viendo la situación desde otra perspectiva
+  * De manera individual, revisamos los videos de las sesiones para una mejor comprensión
+  * Nos apoyamos del material actual así como de información de otros sitios
+*
 * as
 * das
