@@ -206,6 +206,61 @@ Para esta hipótesis obtuvimos un p-value < 2.2e-16 menor al 0.05 por lo cual la
 ### 5. Modelo de regresión para identificar los determinantes de la inseguridad alimentaria en México
 
 
+```
+# Inseguridad alimentaria relacionada con numpeho
+logistic.1 <- glm( IA ~ numpeho, 
+                   data = df.select, family = binomial)
+summary(logistic.1)
+exp( coef( logistic.1 ) )
+# Inseguridad alimentaria relacionada con edadjef
+logistic.1 <- glm( IA ~ edadjef, 
+                   data = df.select, family = binomial)
+summary(logistic.1)
+exp( coef( logistic.1 ) )
+
+# Inseguridad alimentaria relacionada con añosedu
+logistic.1 <- glm( IA ~ añosedu, 
+                   data = df.select, family = binomial)
+summary(logistic.1)
+exp( coef( logistic.1 ) )
+
+
+# Inseguridad alimentaria relacionada con variable de nivel socioeconomico
+logistic.1 <- glm( IA ~ nse5f, 
+                   data = df.select, family = binomial)
+summary(logistic.1)
+exp( coef( logistic.1 ) )
+
+library( dplyr)
+# Inseguridad alimentaria relacionada con nse5f: de bajo y medio bajo
+df.bajo <- select (df.select, IA, nse5f )  %>%
+    filter( nse5f <= 2 )
+
+logistic.1 <- glm( df.bajo$IA ~ df.bajo$nse5f, 
+                   data = df.bajo, family = binomial)
+summary(logistic.1)
+exp( coef( logistic.1 ) )
+
+
+# Inseguridad alimentaria relacionada con nse5f: de Medio en adelante
+df.medioymas <- select (df.select, IA, nse5f )  %>%
+  filter( nse5f > 2 )
+
+logistic.1 <- glm( df.medioymas$IA ~ df.medioymas$nse5f, 
+                   data = df.medioymas, family = binomial)
+summary(logistic.1)
+exp( coef( logistic.1 ) )
+
+
+```
+Donde:
+* Utilizamos la función glm
+* Al obtener el resultado en base logaritmo, convertimos con exp y coef para una mejor lectura
+
+Y ejecutando estas opciones sobre las demás variables llegamos al siguiente resultado:
+![alt text](Imagenes/05_01_tabla.png?raw=true)
+
+
 
 ### 6. Análisis
 De acuerdo a la información analizada en los puntos anteriores, y retomando esto:
