@@ -14,6 +14,62 @@ A continuación se muestra el detalle de cada apartado:
 ### 1. Planteamiento del problema del caso
 
 ### 2. Análisis descriptivo de la información
+## Descripción de datos
+
+Se cuenta con 20280 observaciones con 10 variables descritas en la siguiente tabla:
+
+![Tabla1_02](Imagenes/02_Img1.jpg?raw=true)
+
+Para cada uno de los niveles socioeconómicos se tiene un aproximado del 20%, excepto para el nivel socioeconómico Bajo que corresponde a un 17% de las observaciones.
+
+![Nivel_socioeconómico_Img2](Imagenes/02_Img2.jpg?raw=true)
+
+La inseguridad alimentaria en los hogares observados está presente en poco más del 70%.
+
+![Inseguridad_Alim_Img3](Imagenes/02_Img3.jpg?raw=true)
+
+De todas de las observaciones el 68% corresponde a hogares ubicados en una Zona geográfica urbana.
+
+![Zona_Geografica_Img4](Imagenes/02_Img4.jpg?raw=true)
+
+El 80% de los hogares observados, no cuenta con un recurso financiero distinto al ingreso laboral.
+
+![Recursos_Financieros_Img5](Imagenes/02_Img5.jpg?raw=true)
+
+Para los gastos en alimentos saludables y no saludables, obtenemos las siguientes medidas de tendencia central y de dispersión:
+
+![Tabla2_02](Imagenes/02_Img6.png?raw=true)
+
+De las cuales observamos que para el gasto en alimentos saludables la media, mediana y moda son cercanas, teniendo una distribución normal de los datos sesgada a la izquierda, así como una dispersión baja respecto a la media. Mientras que, para el gasto en alimentos no saludables, tenemos una media y mediana con valores cercanos, con una distribución normal, no simétrica.
+
+![Gasto_Als](Imagenes/02_Img7.jpg?raw=true)
+
+![Gasto_Alns](Imagenes/02_Img8.jpg?raw=true)
+
+Considerando las medidas de tendencia central y dispersión para otras variables tenemos que, para los hogares observados:
+
+![Tabla3_02](Imagenes/02_Img9.jpg?raw=true)
+
+* Más frecuentemente, los hogares están conformados por 4 personas, pero se registran hogares desde 1 hasta 19 personas y solo el 25% está conformado por más de 5 personas. Se tiene una distribución sesgada a la derecha. 
+* La edad promedio del jefe de familia es de 46 años, sin embargo, la edad más frecuente es de 38 años, el 50% de los jefes de familia tiene una edad entre 36 y 57 años.
+* Los años de educación del jefe de familia se observan desde 0 hasta 24 años de estudio, con un promedio de 10.9 años de educación, sin embargo, los datos se encuentran muy dispersos, con una distribución no normal, donde el 75% de los jefes de familia tienen igual o menos de 12 años de educación.
+
+![Educacion](Imagenes/02_Img10.jpg?raw=true)
+
+Nivel socioeconómico y gastos en alimentos
+
+![NS_GastosAls](Imagenes/02_Img11.jpg?raw=true)
+
+![NS_GastosAlns](Imagenes/02_Img12.jpg?raw=true)
+
+## R
+-  [Código R](https://github.com/luisalegria/Equipo15Postwork08BEDUPostwork8_02_ok.R)
+
+
+
+
+
+
 
 
 ### 3. Uso de probabilidades para entender el problema en México
