@@ -10,8 +10,10 @@ Este es el repositorio del Postwork 08 del Modulo Programación y estadística c
 5. Modelo de regresión para identificar los determinantes de la inseguridad alimentaria en México
 6. Análisis 
 
+A continuación se muestra el detalle de cada apartado:
+### 1. Planteamiento del problema del caso
 
-
+### 2. Análisis descriptivo de la información
 
 
 ### 3. Uso de probabilidades para entender el problema en México
@@ -31,7 +33,16 @@ Una vez obtenidos los datos, graficamos la distribución binomial para los Salud
 
 ![alt text](Imagenes/03_01_als.JPG?raw=true)
 
-### 1. Planteamiento del problema del caso
+Y para terminar graficaremos también la distribución binomial para los NO Saludables donde la concentración logarítmica de gasto sobre alimentos NO saludables nos dice que la gente tiene una probabilidad arriba  .005% de 13,293 en el gasto de este tipo alimentos NO saludables.
+![alt text](Imagenes/03_02_alns.JPG?raw=true)
+
+
+### 4. Planteamiento de hipótesis estadísticas y conclusiones para entender el problema en México
+
+### 5. Modelo de regresión para identificar los determinantes de la inseguridad alimentaria en México
+
+
+
 ### 6. Análisis
 De acuerdo a la información analizada en los puntos anteriores, llegamos a lo siguiente:
 * Asdasdas ad
