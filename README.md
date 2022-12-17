@@ -29,7 +29,7 @@ Las probabilidades fueron calculadas dividiendo el total de casos N/A entre el t
 A partir de ahí obtuvimos la media y la desviación estándar para Saludables y como para NO Saludables.
 Una vez obtenidos los datos, graficamos la distribución binomial para los Saludables donde La concentración logarítmica de gasto sobre alimentos SI saludables nos dice que la gente tiene una probabilidad arriba .014% de 39,244 en el gasto de este tipo alimentos SI saludables.
 
-
+![alt text](Imagenes/03_01_als.JPG?raw=true)
 
 ### 1. Planteamiento del problema del caso
 ### 6. Análisis
