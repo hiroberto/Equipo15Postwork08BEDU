@@ -37,7 +37,108 @@ Y para terminar graficaremos también la distribución binomial para los NO Salu
 ![alt text](Imagenes/03_02_alns.JPG?raw=true)
 
 
+
+
 ### 4. Planteamiento de hipótesis estadísticas y conclusiones para entender el problema en México
+
+#### Diferencia entre medias muéstrales.
+
+*Calculamos la diferencia de medias para dos poblaciones:* 
+1.  Nivel socioeconómico: medio, medio alta y alto, 
+2. Nivel socioeconómico medio bajo y bajo 
+3. considerando el logaritmo natural del gasto en alimentos saludables. Para esto propusimos la siguiente Hipótesis: 
+### Ho: No hay diferencia entre las medias poblaciones en base al algoritmo natural de alimentos saludables.
+### Ha: Si hay diferencia entre las medias poblacionales en base al algoritmo natural de alimentos saludables
+```
+ ns_Alto <- df.clean %>% filter(nse5f >=3) %>% pull(ln_als)
+ ns_Bajo <- df.clean %>% filter(nse5f < 3) %>% pull(ln_als)
+ Res1.ln_als <- mean(ns_Alto) - mean(ns_Bajo)
+ Res1 = 0.4265841
+```
+ En base a este resultado se **rechaza la hipótesis nula**, por lo tanto no se rechaza la hipótesis alternativa.
+
+*Calculamos la diferencia de medias de dos poblaciones (las mismas del punto anterior), pero esta vez en base al logaritmo natural del gasto en alimentos NO saludables.*
+
+### Ho: No hay diferencia entre las medias poblacionales considerando el logaritmo de alimentos No saludables = 0
+### Ha: Si hay diferencia entre las medias poblacionales el logaritmo de alimentos No saludables != 0 
+
+> Nns_Alto <- df.clean %>% filter(nse5f >=3) %>% pull(ln_alns)
+> Nns_BAjo <- df.clean %>% filter(nse5f >=3) %>% pull(ln_alns)
+> Res2.ln_alns <- mean(Nns_Alto) - mean(Nns_BAjo)
+El Resultado es **Cero**.  En base a este resultado **no se rechaza la hipótesis nula propuesta**.
+
+
+
+### Se verifica la varianza con var.test, para después calcular t.tes. en base a las hipótesis.
+### Ho : Nivel Alto >= Nivel Bajo   ** El Gasto en alimentos saludables es mayor en la clase Alta que en la clase baja
+### Ha : Nivel Alto < Nivel Bajo  ** El Gasto en alimentos saludables es menor en la clase Alta que en la baja.
+
+ var.test(df.clean[df.clean$nse5f >= 3, "ln_als"],
+ df.clean[df.clean$nse5f <= 2, "ln_als"],
+ ratio = 1, alternative = "two.sided",
+ conf.level = 0.95)
+
+F test to compare two variances
+data:  df.clean[df.clean$nse5f >= 3, "ln_als"] and df.clean[df.clean$nse5f <= 2, "ln_als"]
+F = 0.71634, num df = 12799, denom df = 7479, p-value < 2.2e-16
+alternative hypothesis: true ratio of variances is not equal to 1
+95 percent confidence interval:
+ 0.6879413 0.7457528
+sample estimates:
+ratio of variances 
+         0.7163415
+***
+t.test( x = df.clean[df.clean$nse5f >= 3, "ln_als"],
+        y = df.clean[df.clean$nse5f <= 2, "ln_als"],
+        alternative = "greater", mu=0, var.equal = FALSE  ,conf.level = 0.95)
+***
+data:  df.clean[df.clean$nse5f >= 3, "ln_als"] and df.clean[df.clean$nse5f <= 2, "ln_als"]
+t = 42.713, df = 13653, p-value < 2.2e-16
+alternative hypothesis: true difference in means is greater than 0
+95 percent confidence interval:
+ 0.4101555       Inf
+sample estimates:
+mean of x mean of y 
+ 6.349331  5.922747 
+***
+Para esta hipótesis p-value < 2.2e-16 que es menor a 0.05 por lo tanto se RECHAZA la hipótesis Nula.
+***
+### Ho: Nivel Alto >= Nivel Bajo   ** El Gasto en alimentos NO saludables es mayor o igual en la clase Alta que en la clase baja
+###Ha: Nivel Alto < Nivel Bajo  ** El Gasto en alimentos NO saludables es menor en la clase Alta que en la baja.
+***
+var.test(df.clean[df.clean$nse5f >= 3, "ln_alns"],
+         df.clean[df.clean$nse5f <= 2, "ln_alns"],
+         ratio = 1, alternative = "two.sided",
+         conf.level = 0.95)
+***
+F test to compare two variances
+data:  df.clean[df.clean$nse5f >= 3, "ln_alns"] and df.clean[df.clean$nse5f <= 2, "ln_alns"]
+F = 1.2108, num df = 12799, denom df = 7479, p-value < 2.2e-16
+alternative hypothesis: true ratio of variances is not equal to 1
+95 percent confidence interval:
+ 1.162810 1.260527
+sample estimates:
+ratio of variances 
+          1.210814 
+***
+t.test( x = df.clean[df.clean$nse5f >= 3, "ln_alns"],
+        y = df.clean[df.clean$nse5f <= 2, "ln_alns"],
+        alternative = "greater", mu=0, var.equal = FALSE  ,conf.level = 0.95)
+***
+data:  df.clean[df.clean$nse5f >= 3, "ln_alns"] and df.clean[df.clean$nse5f <= 2, "ln_alns"]
+t = 34.606, df = 16871, p-value < 2.2e-16
+alternative hypothesis: true difference in means is greater than 0
+95 percent confidence interval:
+ 0.4741434       Inf
+sample estimates:
+mean of x mean of y 
+ 4.302453  3.804648 
+***
+Para esta hipótesis obtuvimos un p-value < 2.2e-16 menor al 0.05 por lo cual la hipótesis nula se RECHAZA.
+
+
+
+
 
 ### 5. Modelo de regresión para identificar los determinantes de la inseguridad alimentaria en México
 
