@@ -62,8 +62,6 @@ Nivel socioeconómico y gastos en alimentos
 
 ![NS_GastosAlns](Imagenes/02_Img12.jpg?raw=true)
 
-## R
--  [Código R](https://github.com/luisalegria/Equipo15Postwork08BEDUPostwork8_02_ok.R)
 
 
 
