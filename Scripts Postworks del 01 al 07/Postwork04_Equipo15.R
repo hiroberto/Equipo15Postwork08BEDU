@@ -5,10 +5,8 @@ se acerque el comportamiento de los datos.
 Hint: Puedes apoyarte de medidas descriptivas o técnicas de visualización.
 
 Una vez que hayas seleccionado el modelo, realiza lo siguiente:
-# Se cargan las librerias para trabajar
 
-
-# Se cargan las librerias para trabajar
+# Se cargan las librerías para trabajar
 
 library(DescTools)
 library(ggplot2)
@@ -36,15 +34,15 @@ hist(df.p4$total_intl_charge,prob = T, main = "Histograma Total de Cargos intern
 ###
 media.var <- mean(df.p4$total_intl_charge)    # Guardamos la media en una variable
 
-ds <- sd(df.p4$total_intl_charge)   #Calculamos la desviacion estandar
+ds <- sd(df.p4$total_intl_charge)   #Calculamos la desviación estándar
 
 ###1.Grafica la distribución teórica de la variable aleatoria total_intl_charge
-## FUNCION DE LA DISTRIBUCION NORMAL.
+## FUNCIÓN DE LA DISTRIBUCIÓN NORMAL.
 curve(dnorm(x,mean = media.var, sd = ds),from = 0, to = 5,
       col = 'blue', main= "Densidad de Probabilidad Normal",
       ylab = "f(x)",xlab = "X")
 
-# LA grafica se muestra BIEN con la forma esperada.
+# La grafica se muestra BIEN con la forma esperada.
 ##2.¿Cuál es la probabilidad de que el total de cargos internacionales sea menor a 1.85 usd?
 ## Funcion de la densidad de la distribucion
 
