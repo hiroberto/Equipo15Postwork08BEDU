@@ -79,7 +79,7 @@ t.test(iris[iris$Species == "virginica", "Petal.Length"],
 # Con un nivel de confianza del 99% y un p-value = 0.03202
 # no existe evidencia estadística para rechazar Ho, es decir, 
 # en promedio, el largo del pétalo de la especie virginica es 1.1 cm más grande
-# que el promedio dedel largo del pétalo de la especie versicolor.
+# que el promedio del largo del pétalo de la especie versicolor.
 
 
 "IV. En promedio, no existe diferencia en el ancho del sépalo entre las 
