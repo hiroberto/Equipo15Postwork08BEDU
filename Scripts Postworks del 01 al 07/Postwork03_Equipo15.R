@@ -10,10 +10,10 @@
 #2. Haber realizado el prework y seguir el curso de los ejemplos de la sesión
 #3. Curiosidad por investigar nuevos tópicos y funciones de R
 ###############################################################################
-library(dplyr)
 install.packages("dplyr")
-library(tibble)
+library(dplyr)
 install.packages("tibble")
+library(tibble)
 library(DescTools)
 library(ggplot2)
 library(moments)
@@ -45,7 +45,7 @@ mean(dfp$Mediciones, trim = 0.25)
 median(dfp$Mediciones)
 mode(dfp$Mediciones)
 Mode(dfp$Mediciones)[1]
-kdfp = ceiling(sqrt(length(dfp$Mediciones))) # 25 brackets para la medicion del histograma
+kdfp = ceiling(sqrt(length(dfp$Mediciones))) # 25 brackets para la medición del histograma
 acdfp = (max(dfp$Mediciones)-min(dfp$Mediciones))/kdfp # ancho del backet debe ser de 11.512
 
 
@@ -55,7 +55,7 @@ binsdfp
 Mediciones.clases <- cut(dfp$Mediciones, breaks = binsdfp, include.lowest=TRUE, dig.lab = 5)
 Mediciones.clases
 dist.freq.dfp <- table(Mediciones.clases)
-dist.freq.dfp "se visualiza cunatos valores caen en cada medicion, donde la clase mas alta con valores 
+dist.freq.dfp "se visualiza cuántos valores caen en cada medición, donde la clase más alta con valores 
 interiores es la(14.312,25.824] con 98"
 
 my_hist.dfp <- hist(dfp$Mediciones, breaks =binsdfp, main ="Histograma Mediciones") "se confirma que el
