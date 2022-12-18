@@ -13,6 +13,18 @@ Este es el repositorio del Postwork 08 del Modulo Programación y estadística c
 A continuación se muestra el detalle de cada apartado:
 ### 1. Planteamiento del problema del caso
 
+En México se ha visto reflejado una disminución del gasto per cápita en alimentos saludables, el patrón de alimentación actual ha ido tomando la tendencia de incluir alimentos altamente calóricos y pobres en nutrientes, alimentos que son de fácil acceso y bajo costo.
+
+Unos de los factores que han influido en el patrón de alimentación es la situación económica del país y el bajo nivel socioeconómico de las familias mexicanas.
+
+Ante esta problemática, se quiere analizar estadística y probabilísticamente si el nivel socioeconómico es un factor determinante en los patrones de gasto de alimentos saludables y no saludables. Con este modelo podremos concluir si esto representa un riesgo en la seguridad alimentaria de las familias.
+
+
+
+
+
+
+
 ### 2. Análisis descriptivo de la información
 ## Descripción de datos
 
