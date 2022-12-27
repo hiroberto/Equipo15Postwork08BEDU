@@ -322,7 +322,7 @@ t.test( x = df.clean[df.clean$nse5f >= 3, "ln_alns"],
 " 5) Estima un modelo de regresión, lineal o logístico, para identificar los 
 determinantes de la inseguridad alimentaria en México"
 
-  ##### REGRESION LOGÍSTICA ( para variables categoricas )
+  ##### REGRESIÓN LOGÍSTICA ( para variables categóricas )
 
 df<-read.csv("https://raw.githubusercontent.com/beduExpert/Programacion-R-Santander-2022/main/Sesion-08/Postwork/inseguridad_alimentaria_bedu.csv")
 df.clean <- df[complete.cases(df),]
@@ -334,10 +334,10 @@ df.select <- select(df.clean, ln_als, nse5f, numpeho, edadjef, añosedu, ln_alns
 
 attach( df.select)
 
-# Vamos a calcular la razon de probabilidad de que se presente la Inseguridad alimentaria
+# Vamos a calcular la razón de probabilidad de que se presente la Inseguridad alimentaria
 #  para cada variable. Usaremos la regresión logística y momios,
 # tomando las  variables de :
-#   - Numero de personas en el hogar
+#   - Número de personas en el hogar
 #   - Edad del Jefe de familia
 #   - Años de educación
 #   - Nivel socioeconómico, agrupando los niveles Bajo y medio bajo; y de Medio en adelante
@@ -363,7 +363,7 @@ summary(logistic.1)
 exp( coef( logistic.1 ) )
 
 
-# Inseguridad alimentaria relacionada con variable de nivel socioeconomico
+# Inseguridad alimentaria relacionada con variable de nivel socioeconómico
 logistic.1 <- glm( IA ~ nse5f, 
                    data = df.select, family = binomial)
 summary(logistic.1)
